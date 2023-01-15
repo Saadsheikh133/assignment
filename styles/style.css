@@ -196,6 +196,11 @@ ul li a {
 
 .section-img {
     padding-left: 50px;
+    max-width: 100%;
+}
+
+.center {
+    text-align: center;
 }
 
 .section-info .btn-third {
@@ -301,6 +306,7 @@ ul li a {
 .sponsore-logo img {
     color: black;
     mix-blend-mode: luminosity;
+    filter: grayscale(1);
 }
 
 /* -------------
@@ -362,88 +368,101 @@ courses style
     border-radius: 8px;
     margin-bottom: 216px;
 }
-img{
-    max-width: 100%;
-}
-.center{
-    text-align: center;
-}
-.sponsore-logo img {
-    filter: grayscale(1);
-}
+
+
 /* media screen styles */
 /* mobile screen styles */
 
-@media only screen and (max-width:900px) {
-    nav, ul {
+@media only screen and (max-width:686px) {
+
+    main {
+        padding: 0 15px;
+        margin: 0 15px;
+    }
+
+    nav,
+    ul {
         flex-direction: column;
     }
-    .header-section{
+
+    .header-section {
         height: auto;
         overflow: hidden;
         width: 100%;
     }
-    .section-title{
+
+    .section-title {
         display: block;
         width: 100%;
     }
-    .section-title img{
+
+    .section-title img {
         width: 100%;
         margin-bottom: 30px;
     }
-    .section-1{
+
+    .section-1 {
         display: block;
     }
+
     .section-detail {
         margin-left: 0;
     }
+
     .section-info {
         display: block;
         width: 100%;
         overflow: hidden;
     }
-    .courses, .sponsore-logo, .logo{
+
+    .courses {
         grid-template-columns: repeat(1, 1fr);
     }
-    .section-2{
+
+    .section-2 {
         overflow: hidden;
     }
-    .section-info .btn-third{
+
+
+    .section-info .btn-third {
         position: relative;
         left: auto;
         right: auto;
         margin-top: 15px;
     }
-    .facts{
+
+    .facts {
         text-align: center;
         overflow: hidden;
     }
-    .facts .logo{
+
+    .facts .logo {
         display: block;
     }
-    .sponsore-logo{
+
+    .sponsore-logo {
         text-align: center;
     }
+
     .sponsore-logo img {
         margin-bottom: 30px;
     }
-    .footer .copyright{
+
+    .footer .copyright {
         padding: 35px 0;
         margin: 0;
         border-radius: 0;
     }
-    .course .course-banner img{
+
+    .course .course-banner img {
         height: auto;
     }
-    .logo .work{
-        margin-bottom: 30px;
-    }
-    .section-img{
+
+    .section-img {
         padding: 0;
         margin-top: 50px;
     }
-    main{
-        padding: 0 15px;
-        margin: 0 15px;
+    .sponsore-logo{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
